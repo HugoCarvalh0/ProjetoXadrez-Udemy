@@ -2,6 +2,7 @@ package application;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.regex.Matcher;
 
 import chess.ChessException;
 import chess.ChessMatch;
@@ -22,6 +23,10 @@ public class Program {
 				System.out.println();
 				System.out.print("Posicao de origem: ");
 				ChessPosition origem = UI.readChessPosition(sc);
+				
+				boolean[][] possibleMoves = match.possibleMoves(origem);
+				UI.clearScreen();
+				UI.printBoard(match.getPieces(), possibleMoves);
 
 				System.out.println();
 				System.out.print("Posicao de destino: ");
