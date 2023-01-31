@@ -38,6 +38,9 @@ public abstract class ChessPiece extends Piece {
 	public ChessPosition getChessPosition() {
 		return ChessPosition.fromPosition(position);
 	}
+
+	/*public String toSring() {
+		return null;
+	}*/
 	
 }
-//postion, chessmatch, chesspiece, rook
