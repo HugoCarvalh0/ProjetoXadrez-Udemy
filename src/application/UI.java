@@ -61,7 +61,7 @@ public class UI {
 
 			System.out.println("Esperando jogador: " + chessMatch.getCurrentPlayer());
 			if (chessMatch.getCheck()) {
-				System.out.println("CHEQUE!");
+				System.out.println("XEQUE!");
 			}
 		} else {
 			System.out.println("XEQUE-MATE!");
