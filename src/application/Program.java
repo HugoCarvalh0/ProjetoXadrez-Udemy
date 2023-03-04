@@ -37,6 +37,13 @@ public class Program {
 				if(capturedPiece != null) {
 					captured.add(capturedPiece);
 				}				
+				
+				if(match.getPromoted() != null) {
+					System.out.println("Digite a peca para promover seu peao (B/N/R/Q)");
+					String type = sc.nextLine();
+					match.replacePromotedPiece(type);
+				}
+				
 			} catch (ChessException e) {
 				System.out.println(e.getMessage());
 				sc.nextLine();
